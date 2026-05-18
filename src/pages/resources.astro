@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Resources" description="Useful accent and dialect resources curated by Danièle Lydon.">
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Reference</p>
+      <h1>Resources</h1>
+      <div class="gold-rule"></div>
+      <p class="hero-sub">A selection of useful accent and dialect resources.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="resources-list">
+        <a href="https://www.dialectsarchive.com" target="_blank" rel="noopener noreferrer" class="resource-item">
+          <div class="resource-item__text"><h2>International Dialects of English Archive <span class="abbr">(IDEA)</span></h2><p>A comprehensive archive of dialect and accent recordings from around the world.</p></div>
+          <span class="resource-item__arrow">→</span>
+        </a>
+        <a href="https://www.uni-due.de/IERC/" target="_blank" rel="noopener noreferrer" class="resource-item">
+          <div class="resource-item__text"><h2>Irish Resource Centre <span class="abbr">(IERC)</span></h2><p>University of Duisburg-Essen's Irish English Resource Centre.</p></div>
+          <span class="resource-item__arrow">→</span>
+        </a>
+        <a href="https://www.scotslanguage.com/pages/view/id/10" target="_blank" rel="noopener noreferrer" class="resource-item">
+          <div class="resource-item__text"><h2>Scots Language Centre</h2><p>Resources and recordings for Scottish accent and dialect work.</p></div>
+          <span class="resource-item__arrow">→</span>
+        </a>
+        <a href="https://sounds.bl.uk/Accents-and-dialects" target="_blank" rel="noopener noreferrer" class="resource-item">
+          <div class="resource-item__text"><h2>British Library Sounds</h2><p>The British Library's archive of accents and dialects from across Britain.</p></div>
+          <span class="resource-item__arrow">→</span>
+        </a>
+        <a href="https://pointpark.libguides.com/c.php?g=18026&p=101492" target="_blank" rel="noopener noreferrer" class="resource-item">
+          <div class="resource-item__text"><h2>Welsh Dialect Resources</h2><p>A curated guide to Welsh dialect and accent resources.</p></div>
+          <span class="resource-item__arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
+<style>
+  .hero-sub{font-size:1.1rem;color:#555;margin-top:1.5rem}
+  .resources-list{display:flex;flex-direction:column;border-top:1px solid var(--light-grey)}
+  .resource-item{display:flex;justify-content:space-between;align-items:center;padding:2.5rem 0;border-bottom:1px solid var(--light-grey);text-decoration:none;color:inherit;gap:2rem;transition:padding-left 0.2s}
+  .resource-item:hover{padding-left:1rem}
+  .resource-item:hover .resource-item__text h2{color:var(--gold)}
+  .resource-item:hover .resource-item__arrow{color:var(--gold)}
+  .resource-item__text h2{font-size:1.3rem;font-weight:600;margin-bottom:0.4rem;transition:color 0.2s}
+  .abbr{font-weight:400;color:var(--mid-grey);font-size:1rem}
+  .resource-item__text p{font-family:var(--font-ui);font-size:0.85rem;color:var(--mid-grey);margin:0}
+  .resource-item__arrow{font-size:1.5rem;color:var(--light-grey);transition:color 0.2s;flex-shrink:0}
+</style>

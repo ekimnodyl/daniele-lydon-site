@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Testimonials" description="What directors, actors and clients say about working with Danièle Lydon.">
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">In their words</p>
+      <h1>Testimonials</h1>
+      <div class="gold-rule"></div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <article class="testimonial testimonial--featured">
+        <blockquote><p>Daniele and I have worked closely on the Broadway and San Francisco productions of Harry Potter & The Cursed Child, where she has diligently worked with 70 actors. Her unique combination of patience and precision leads to results that are beyond expectation. She encourages laughter as people learn and implement feedback. The result is not only a technically precise performance, but one imbued with a deep confidence essential to public performance. Working with Daniele is an empowering experience filled with possibility.</p></blockquote>
+        <footer><span class="t-name">Benjamin Shaw</span><span class="t-credit">Director, Harry Potter & The Cursed Child</span></footer>
+      </article>
+      <article class="testimonial">
+        <blockquote><p>Daniele was tremendously helpful during my West End run of The King & I musical. Because the story's setting had a British background, my aim was to go for a British accent more so than when I was on Broadway. Not only was Daniele's coaching spot on, but I was also helped out on many occasions by her positive encouragement.</p></blockquote>
+        <footer><span class="t-name">Ken Watanabe</span><span class="t-credit">The King & I, West End</span></footer>
+      </article>
+      <article class="testimonial">
+        <blockquote><p>Dialect coaching requires a deep understanding of different performers' processes and precision accuracy. Daniele has both these qualities and more. My casts always trusted her and as a result, she was able to say the right thing at the right time which helped build detailed and powerful performances. Sensitive, skilful and perceptive.</p></blockquote>
+        <footer><span class="t-name">Edward Hall</span><span class="t-credit">Director</span></footer>
+      </article>
+      <article class="testimonial">
+        <blockquote><p>There's something about your energy in a room that is encouragingly calm. I think having that with me on a daily basis, warming up before rehearsals and every show, allowed me to find a greater sense of calm on stage.</p></blockquote>
+        <footer><span class="t-name">Zach Wyatt</span><span class="t-credit">You and I, Hampstead Theatre (with Maisie Williams)</span></footer>
+      </article>
+      <article class="testimonial">
+        <blockquote><p>To these Midlands ears the old-fashioned north-east accents are pretty much note-perfect; in a world in which actors still tend to default to something like RP, the accents here give everything a surprising freshness.</p></blockquote>
+        <footer><span class="t-name">Time Out</span><span class="t-credit">Press review</span></footer>
+      </article>
+    </div>
+  </section>
+</Layout>
+<style>
+  .testimonial{padding:3.5rem 0;border-bottom:1px solid var(--light-grey);display:grid;grid-template-columns:1fr 220px;gap:4rem;align-items:start}
+  .testimonial--featured{background:var(--charcoal);color:var(--warm-white);padding:4rem;margin-bottom:2rem;grid-template-columns:1fr 200px;border-bottom:none}
+  .testimonial--featured blockquote p{font-size:clamp(1.1rem,2vw,1.5rem) !important;color:var(--warm-white) !important}
+  .testimonial--featured .t-name{color:var(--gold) !important}
+  .testimonial--featured .t-credit{color:#888 !important}
+  blockquote{border:none;padding:0}
+  blockquote p{font-family:var(--font-display);font-size:1.15rem;font-style:italic;line-height:1.75;color:var(--charcoal);margin:0}
+  blockquote p::before{content:'\201C'}
+  blockquote p::after{content:'\201D'}
+  footer{display:flex;flex-direction:column;gap:0.4rem;padding-top:0.5rem;background:transparent}
+  .t-name{font-family:var(--font-display);font-size:1.05rem;font-weight:600;color:var(--charcoal)}
+  .t-credit{font-family:var(--font-ui);font-size:0.75rem;letter-spacing:0.06em;color:var(--mid-grey)}
+  @media(max-width:768px){.testimonial{grid-template-columns:1fr;gap:1.5rem}.testimonial--featured{padding:2.5rem 1.5rem;grid-template-columns:1fr}}
+</style>
